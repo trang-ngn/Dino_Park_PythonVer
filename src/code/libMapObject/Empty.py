@@ -3,8 +3,8 @@ from MapObject import MapObject
 
 
 class Empty(MapObject):
-    def getType(self):
+    def getType(self) -> MapObjectType:
         return MapObjectType.EMPTY
 
-    def print(self):
+    def print(self) -> str:
         return "[     ]"
